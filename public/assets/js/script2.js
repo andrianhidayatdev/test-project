@@ -15,6 +15,8 @@ let costIDR_2;
 let checkEquals_2;
 // SET VALUE CUSTOMER
 customer_2.value = getCookie("customer_2");
+console.log(getCookie("customer_2"));
+
 // SET VALUE HARGA
 harga_2.value = getCookie("harga_2");
 // SET LIFETIME
@@ -58,7 +60,7 @@ function handleRadio_2() {
       setCountDown_2();
       checkEquals_2 = setInterval(checkEqualsTime_2, 1000);
     }
-    reset();
+    reset_2();
     setCountDown_2();
     // RESET LIFE TIME
     // LOOP LIFE TIME
@@ -89,7 +91,7 @@ function handleRadio_2() {
   }
 }
 
-function reset() {
+function reset_2() {
   setCookie("customer_2", "", 1);
   setCookie("harga_2", "", 1);
   setCookie("cost_2", "", 1);
